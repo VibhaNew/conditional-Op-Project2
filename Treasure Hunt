@@ -1,0 +1,19 @@
+print("Welcome to Treasure Island!")
+print("Your mission is to find the treasure.")
+direction = input("Do you want to go to the left or right? L or R :")
+
+if direction == "R":
+    print("You have entered a wrong zone.\nGame Over!")
+elif direction == "L":
+    print("Great!! You are now at a lake.")
+    Action_1 = input("Would you like to Swim or Wait for a boat? Swim or Wait: ")
+    if Action_1 == "Swim":
+        print("Sorry,game over!")
+    elif Action_1 == "Wait":
+        print("cool!!here is your boat!")
+        print("Welcome to the palace!")
+        Action_2 = input("which door you want to go to? Red, Yellow or Blue?")
+        if Action_2 == "Yellow":
+            print ("congratulations!! You win.")
+        else:
+            print("Game over!Better luck next time!")
